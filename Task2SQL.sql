@@ -1,4 +1,4 @@
---Создание таблицы 'Категории'
+--РЎРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†С‹ 'РљР°С‚РµРіРѕСЂРёРё'
 CREATE TABLE Category
 (
     CategoryId INT PRIMARY KEY,
@@ -11,7 +11,7 @@ VALUES
     (2, 'Clothing'),
     (3, 'Books');
 
---Создание таблицы 'Продукты'
+--РЎРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†С‹ 'РџСЂРѕРґСѓРєС‚С‹'
 CREATE TABLE Product
 (
     ProductId INT PRIMARY KEY,
@@ -30,8 +30,8 @@ VALUES
     (106, 'Textbook', 3),
 	(107, 'Car', null);
 
---Запрос, согласно требованиям
---Используется LEFT JOIN для вывода продукта, если даже у него нет категории
+--Р—Р°РїСЂРѕСЃ, СЃРѕРіР»Р°СЃРЅРѕ С‚СЂРµР±РѕРІР°РЅРёСЏРј
+--РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ LEFT JOIN РґР»СЏ РІС‹РІРѕРґР° РїСЂРѕРґСѓРєС‚Р°, РµСЃР»Рё РґР°Р¶Рµ Сѓ РЅРµРіРѕ РЅРµС‚ РєР°С‚РµРіРѕСЂРёРё
 SELECT p.ProductName, c.CategoryName
 FROM product p
 LEFT JOIN category c ON p.CategoryId = c.CategoryId;
