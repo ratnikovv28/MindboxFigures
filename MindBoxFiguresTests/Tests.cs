@@ -20,10 +20,10 @@ namespace MindBoxFiguresTests
 
             // Act & Assert
             // Assert
-            //Можно создать
+            //РњРѕР¶РЅРѕ СЃРѕР·РґР°С‚СЊ
             Assert.DoesNotThrow(() => new Circle(radius1));
             Assert.DoesNotThrow(() => new Circle(radius2));
-            //Нельзя создать
+            //РќРµР»СЊР·СЏ СЃРѕР·РґР°С‚СЊ
             Assert.Throws<ArgumentException>(() => new Circle(radius3));
         }
 
@@ -50,9 +50,9 @@ namespace MindBoxFiguresTests
 
             // Act & Assert
             // Assert
-            //Можно создать
+            //РњРѕР¶РЅРѕ СЃРѕР·РґР°С‚СЊ
             Assert.DoesNotThrow(() => new Triangle(a, b, c));
-            //Нельзя создать
+            //РќРµР»СЊР·СЏ СЃРѕР·РґР°С‚СЊ
             Assert.Throws<ArgumentException>(() => new Triangle(a, b, c1));
         }
 
@@ -70,9 +70,9 @@ namespace MindBoxFiguresTests
 
             // Act & Assert
             // Assert
-            //Прямоугольный
+            //РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№
             Assert.IsTrue(triangle1.IsRightTriangle());
-            //Не прямоугольный
+            //РќРµ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№
             Assert.IsFalse(triangle2.IsRightTriangle());
         }
 
